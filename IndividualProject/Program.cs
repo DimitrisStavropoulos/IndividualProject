@@ -26,14 +26,18 @@ namespace IndividualProject
             //trainers.Add(cpUtils.GetTrainerDetails()); 
             //students.Add(cpUtils.GetStudentDetails());
             //courses.Add(cpUtils.GetCourseDetails());
-            assignments.Add(cpUtils.GetAssignmentDetails());
+            //assignments.Add(cpUtils.GetAssignmentDetails());
 
             //ektyposi listwn
+
             //cpUtils.PrintTrainersList(trainers);
             //cpUtils.PrintStudentsList(students);
             //cpUtils.PrintCoursesList(courses);
-            cpUtils.PrintAssignmentsList(assignments);
+            //cpUtils.PrintAssignmentsList(assignments);
 
+            //ektyposi olwn to objects
+
+            //cpUtils.PrintAllExistingObjects(trainers, students, assignments, courses);
 
         }
     }

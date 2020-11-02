@@ -60,6 +60,7 @@ namespace IndividualProject.BusinessLogic
 
         public void PrintTrainersList(List<Trainer> trainers)
         {
+            Console.WriteLine("The list of trainers is:");
             foreach(var trainer in trainers)
             {
                 Console.WriteLine(trainer);
@@ -68,6 +69,7 @@ namespace IndividualProject.BusinessLogic
 
         public void PrintStudentsList(List<Student> students)
         {
+            Console.WriteLine("The list of students is:");
             foreach (var student in students)
             {
                 Console.WriteLine(student);
@@ -76,6 +78,7 @@ namespace IndividualProject.BusinessLogic
 
         public void PrintAssignmentsList(List<Assignment> assignments)
         {
+            Console.WriteLine("The list of assignments is:");
             foreach (var assignment in assignments)
             {
                 Console.WriteLine(assignment);
@@ -83,12 +86,21 @@ namespace IndividualProject.BusinessLogic
         }
         public void PrintCoursesList(List<Course> courses)
         {
+            Console.WriteLine("The list of courses is:");
             foreach (var course in courses)
             {
                 Console.WriteLine(course);
             }
         }
 
+        public void PrintAllExistingObjects(List<Trainer> trainers, List<Student> students, List<Assignment> assignments, List<Course> courses)
+        {
+            Console.WriteLine("The list of ALL OBJECTS is:");
+            PrintTrainersList(trainers);
+            PrintStudentsList(students);
+            PrintCoursesList(courses);
+            PrintAssignmentsList(assignments);
+        }
     }   
 
 }
